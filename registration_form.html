@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+</html>
+<body>
+    <h1 style="background-color: rgb(51, 129, 181); color: rgb(14, 13, 13); padding: 8px; border-radius: 6px; display: inline-block; text-align: center; margin: 0 auto; width: 100%;">Registration Form</h1>
+    <form action="saveuser.php" method="post" align="center"> 
+        <div>
+            <label>Name</label>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="30">
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" id="email" name="Email" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" title="Please enter a valid email address with @ and .">
+        </div>
+        <div>
+            <label>Age</label>
+            <input type="number" id="age" name="Age" required min="18" max="99" >
+        </div>
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="gender" required>Male
+            <input type="radio" name="gender"required>Female
+        </div>
+        <div>
+            <label>Course</label>
+            <select name="course" required>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>HM</option>
+                <option>BTECH</option>
+                
+            </select>
+        </div>
+        <div>
+            <label>Terms and Conditions</label>
+            <textarea rows="5" cols="30" required readonly></textarea>
+        </div>
+        <div>
+            <input type="checkbox" required>Agree to the terms and conditions
+        </div>
+        <div>
+            <input type="submit" value="Register Now">
+        </div>
+    </form>
+</body>
+</html>
+
+            
